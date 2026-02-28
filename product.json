@@ -1,0 +1,128 @@
+{
+  "user": [],
+  "food": [],
+  "product": [
+    
+      {
+        "id": 1,
+        "name": "iPhone",
+        "price": 79999,
+        "image": "https://images.unsplash.com/photo-1664478546389-1d2b5b5b1c89"
+      },
+      {
+        "id": 2,
+        "name": "Samsung Phone",
+        "price": 74999,
+        "image": "https://images.unsplash.com/photo-1678911820864-e1f0a3a1a996"
+      },
+      {
+        "id": 3,
+        "name": "OnePlus Phone",
+        "price": 56999,
+        "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
+      },
+      {
+        "id": 4,
+        "name": "MacBook",
+        "price": 114999,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+      },
+      {
+        "id": 5,
+        "name": "Dell Laptop",
+        "price": 99999,
+        "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+      },
+      {
+        "id": 6,
+        "name": "HP Laptop",
+        "price": 65999,
+        "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed"
+      },
+      {
+        "id": 7,
+        "name": "Sony Headphone",
+        "price": 29999,
+        "image": "https://images.unsplash.com/photo-1585386959984-a41552231658"
+      },
+      {
+        "id": 8,
+        "name": "Apple Watch",
+        "price": 45999,
+        "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b"
+      },
+      {
+        "id": 9,
+        "name": "Smart TV",
+        "price": 54999,
+        "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6"
+      },
+      {
+        "id": 10,
+        "name": "Canon Camera",
+        "price": 38999,
+        "image": "https://images.unsplash.com/photo-1519183071298-a2962eadc2db"
+      },
+      {
+        "id": 11,
+        "name": "Nike Shoes",
+        "price": 7999,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+      },
+      {
+        "id": 12,
+        "name": "Adidas Hoodie",
+        "price": 3499,
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+      },
+      {
+        "id": 13,
+        "name": "Gaming Mouse",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7"
+      },
+      {
+        "id": 14,
+        "name": "Keyboard",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+      },
+      {
+        "id": 15,
+        "name": "JBL Speaker",
+        "price": 6999,
+        "image": "https://images.unsplash.com/photo-1589003077984-894e133dabab"
+      },
+      {
+        "id": 16,
+        "name": "Power Bank",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1609592806596-3d6cda0d6d80"
+      },
+      {
+        "id": 17,
+        "name": "Asus Laptop",
+        "price": 129999,
+        "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302"
+      },
+      {
+        "id": 18,
+        "name": "iPad",
+        "price": 42999,
+        "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0"
+      },
+      {
+        "id": 19,
+        "name": "LED Bulb",
+        "price": 999,
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+      },
+      {
+        "id": 20,
+        "name": "Wireless Charger",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+      }
+    ]
+  
+}
