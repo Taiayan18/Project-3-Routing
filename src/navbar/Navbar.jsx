@@ -1,13 +1,6 @@
-import { NavLink } from "react-router-dom";
-import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
+import { NavLink } from "react-router-dom"
 
-const Navbar = ({ user }) => {
-
-  const handleLogout = async () => {
-    await signOut(auth);
-  };
-
+const Navbar = () => {
   return (
     <div className="bg-black text-white p-4 shadow-lg">
       <ul className="flex justify-center gap-10 text-lg font-semibold">
@@ -30,40 +23,27 @@ const Navbar = ({ user }) => {
           Product
         </NavLink>
 
-        {/* ✅ Show Add Product only if logged in */}
-        {user && (
-          <NavLink 
-            to="/addproduct"
-            className={({ isActive }) => 
-              isActive ? "text-yellow-400" : "hover:text-yellow-400 transition"
-            }
-          >
-            Add Product
-          </NavLink>
-        )}
+        <NavLink 
+          to="/addproduct"
+          className={({ isActive }) => 
+            isActive ? "text-yellow-400" : "hover:text-yellow-400 transition"
+          }
+        >
+          Add Product
+        </NavLink>
 
-        {/* ✅ Toggle Login / Logout */}
-        {!user ? (
-          <NavLink 
-            to="/login"
-            className={({ isActive }) => 
-              isActive ? "text-yellow-400" : "hover:text-yellow-400 transition"
-            }
-          >
-            Login
-          </NavLink>
-        ) : (
-          <button 
-            onClick={handleLogout}
-            className="hover:text-red-400 transition"
-          >
-            Logout
-          </button>
-        )}
+        <NavLink 
+          to="/login"
+          className={({ isActive }) => 
+            isActive ? "text-yellow-400" : "hover:text-yellow-400 transition"
+          }
+        >
+          Login
+        </NavLink>
 
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
