@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase";
+
 import Navbar from "./navbar/Navbar";
 import Product from "./component/Product";
 import AddProduct from "./component/Addproduct";
@@ -8,14 +11,22 @@ import Login from "./component/Login";
 function App() {
 
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [user, setUser] = useState(null); 
 
-  // ✅ Delete Product
+ 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   const deleteProduct = (id) => {
     setProducts(products.filter((item) => item.id !== id));
   };
 
-  // ✅ Update Product
+
   const updateProduct = (id, updatedData) => {
     setProducts(
       products.map((item) =>
@@ -26,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Navbar cart={cart} />
+      <Navbar user={user} />
 
       <Routes>
         <Route
@@ -36,6 +47,7 @@ function App() {
               products={products}
               deleteProduct={deleteProduct}
               updateProduct={updateProduct}
+              user={user}   
             />
           }
         />
